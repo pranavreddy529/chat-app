@@ -17,7 +17,10 @@ app.use(cookieParser());
 
 // CORS setup to allow frontend requests from Vite (port 5173)
 app.use(cors({
-  origin: "http://localhost:5173", // frontend URL
+  origin: [
+    "http://localhost:5173",
+    "https://chat-app-seven-silk-21.vercel.app"
+  ],
   credentials: true,               // allow cookies/auth headers
 }));
 
