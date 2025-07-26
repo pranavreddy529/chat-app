@@ -17,5 +17,5 @@ userRouter.put('/update-profile',authUser, updateProfile)
 
 
 
-export default userRouter
+export default userRouter;
 
