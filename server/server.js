@@ -33,7 +33,10 @@ app.use("/api/messages", messageRouter);
 // Socket.io server setup
 export const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://chat-app-seven-silk-21.vercel.app"
+    ],
     credentials: true,
   },
 });
